@@ -28,6 +28,7 @@ class App{
 
     animate(t){
         this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
+        console.log("animated");
         this.waveGroup.draw(this.ctx);
         window.requestAnimationFrame(this.animate.bind(this));
     }
